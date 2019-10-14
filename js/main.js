@@ -166,14 +166,12 @@ doc.addEventListener("DOMContentLoaded", function() {
       <h6>${title}</h6>
       </article>
       `;
-      doc.querySelector("#v-pills-belgium_dutch-tab").innerHTML += `
-      <span class="sidebar_num">${active_num.length}</span>
-      `;
+
     }
   }
     }
     console.log(active_num.length)
-    doc.querySelector("#belgium_dutch_active").innerHTML += `
+    doc.querySelector("#belgium_dutch").innerHTML += `
     <article class="activate">
     <h2 class="course">Active Courses: </h2>
     <h2 class="num"> ${active_num.length}</h2>
