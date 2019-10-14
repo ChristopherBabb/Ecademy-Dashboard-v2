@@ -152,7 +152,15 @@
         <!-- BUTTON DEACTIVATED -->
         <!--<div id="page-content-wrapper">
           <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">More Countries</a>-->
-          <div id="google_translate_element">
+          <div id="google_translate_element"></div>
+          <script type="text/javascript" 
+          src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+          </script>
+          <script type="text/javascript">
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+            }
+            </script>
           <div class="tab-content" id="v-pills-tabContent">
             <div class="tab-pane fade" id="v-pills-australia" role="tabpanel" aria-labelledby="v-pills-australia-tab">
               <h1 class="country">Australia</h1>
@@ -458,7 +466,7 @@
               </section>
             </div>
           </div>
-        </div>
+        
         <!--  <div class="legend">
             <span id="legend-active">
               Active
@@ -479,14 +487,6 @@
     <script src="js/main.js?v=9"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" 
-    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
-    </script>
-    <script type="text/javascript">
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-      }
-      </script>
 
 
     <!-- Menu Toggle Script -->
